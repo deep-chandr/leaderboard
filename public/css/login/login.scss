@@ -1,0 +1,270 @@
+/* @import 'extras'; */
+.login_page_wrapper {
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	font-family: 'lato', sans-serif;
+	h1 {
+		font-size: 2rem;
+		line-height: 1.25;
+		margin-bottom: 1.5rem;
+	}
+	h2 {
+		font-size: 1.625rem;
+		line-height: 1.25;
+		margin-bottom: 1.5rem;
+	}
+	h3 {
+		font-size: 1.375rem;
+		line-height: 1.13;
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		color: white;
+	}
+	h4 {
+		font-size: 1.375rem;
+		line-height: 1.13;
+		margin-bottom: 1.5rem;
+		color: rgba(0, 0, 0, 0.8);
+		max-width: 50rem;
+	}
+	h5 {
+		font-size: 1rem;
+		line-height: 1.13;
+		margin-bottom: 1.5rem;
+	}
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+		max-width: 50rem;
+		margin-bottom: 1.5rem;
+		color: #f0f0f0;
+	}
+	.para-type-2 {
+		max-width: 40rem;
+	}
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		color: white;
+	}
+	#qqww {
+		background: transparent !important;
+		color: red;
+	}
+	input {
+		padding: 0.8rem 1rem;
+		width: 21.2rem;
+		background: transparent;
+		border: none;
+		outline: #bb1333;
+		border-bottom: 1px solid grey;
+		font-size: 1rem;
+		font-weight: 600;
+		color: white;
+		&::placeholder {
+			color: white;
+		}
+		&:focus {
+			background: transparent !important;
+		}
+	}
+	button {
+		width: 100%;
+		padding: 0.8rem 1rem;
+		margin-top: 1.3rem;
+		font-size: 1rem;
+		font-weight: 600;
+		background: #f0f0f0;
+		border: none;
+		margin-bottom: 1.5rem;
+		cursor: pointer;
+	}
+	.login {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+		background-image: url("../../images/login.jpg");
+		background-size: cover;
+		background-position: center;
+		.login-shade {
+			background: linear-gradient(to right, #010101, rgba(2, 2, 2, 0.5));
+			opacity: 1;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			.login-wrapper {
+				nav {
+					position: absolute;
+					top: 1rem;
+					left: 0rem;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					width: 100%;
+					.logo {
+						width: 3rem;
+						padding-left: 1rem;
+						img {
+							width: 100%;
+							cursor: pointer;
+						}
+					}
+					.close-button {
+						padding-right: 1rem;
+						i {
+							font-size: 2rem;
+							color: white;
+							cursor: pointer;
+						}
+					}
+				}
+				.login-container {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					background: transparent;
+					h3 {
+						.red {
+							color: #bb1333;
+						}
+					}
+					form {
+						display: flex;
+						flex-direction: column;
+						input {
+							width: 22.2rem;
+							background: transparent;
+							border-bottom: 1px solid grey;
+						}
+					}
+					.forgot-login {
+						cursor: pointer;
+					}
+					.secure {
+						margin-bottom: 0rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.login_page_wrapper {
+		h1 {
+			font-size: 2.3rem;
+			line-height: 1.3;
+		}
+		h2 {
+			font-size: 1.625rem;
+			line-height: 1.25;
+		}
+		h3 {
+			font-size: 1.375rem;
+			line-height: 1.13;
+		}
+		h4 {
+			font-size: 1.375rem;
+			line-height: 1.13;
+		}
+		h5 {
+			font-size: 1rem;
+			line-height: 1.13;
+		}
+		p {
+			font-size: 1.1rem;
+			line-height: 1.6;
+		}
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.login_page_wrapper {
+		h1 {
+			font-size: 2.5rem;
+			line-height: 1.125;
+		}
+		h2 {
+			font-size: 2rem;
+			line-height: 1.25;
+		}
+		h3 {
+			font-size: 1.5rem;
+			line-height: 1.25;
+		}
+		h4 {
+			font-size: 1.5rem;
+			line-height: 1.25;
+		}
+		h5 {
+			font-size: 1rem;
+			line-height: 1.25;
+		}
+		p {
+			font-size: 1.1rem;
+			line-height: 1.6;
+		}
+	}
+}
+@media only screen and (min-width: 1224px) {
+	.login_page_wrapper {
+		h1 {
+			font-size: 3rem;
+			line-height: 1.05;
+		}
+		h2 {
+			font-size: 2.25rem;
+			line-height: 1.25;
+		}
+		h3 {
+			font-size: 1.75rem;
+			line-height: 1.25;
+		}
+		h4 {
+			font-size: 1.5rem;
+			line-height: 1.25;
+		}
+		h5 {
+			font-size: 1rem;
+			line-height: 1.25;
+		}
+		p {
+			font-size: 1.1rem;
+			line-height: 1.8;
+		}
+	}
+}
+@media only screen and (min-width: 1824px) {
+	.login_page_wrapper {
+		h1 {
+			font-size: 3rem;
+			line-height: 1.05;
+		}
+		h2 {
+			font-size: 2.25rem;
+			line-height: 1.25;
+		}
+		h3 {
+			font-size: 1.75rem;
+			line-height: 1.25;
+		}
+		h4 {
+			font-size: 1.75rem;
+			line-height: 1.25;
+		}
+		h5 {
+			font-size: 1.3rem;
+			line-height: 1.25;
+		}
+		p {
+			font-size: 1.2rem;
+			line-height: 1.8;
+		}
+	}
+}

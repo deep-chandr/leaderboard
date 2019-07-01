@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login :LeaderBoard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <script src="https://use.fontawesome.com/898e5ca425.js"></script> -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="login_page_wrapper">
+        <main id="login" class="login">
+            <div class="login-shade">
+                <div class="login-wrapper">
+                    <nav>
+                        <div class="logo">
+                            <img src="data:image/png;base64,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" />
+                        </div>
+                        <!-- <div class="close-button"><i class="fas fa-times"></i></div> -->
+                    </nav>
+
+                    <div class="login-container">
+                        <h3>Log into Ko<span class="red">nfinity</span></h3>
+                        <!-- <p>or <a href="https://konfinity.com/Registration" target="_blank">Create Account</a></p> -->
+                        <form onsubmit="return false" >
+                            <input type="email" placeholder="Email Address" data-name="email" />
+                            <input type="password" placeholder="Password" data-name="pass" />
+                            <button type="submit" onclick="app.login.onLoginSubmit()">Log in</button>
+                        </form>
+                        <!-- <p class="forgot-login" onClick={this.handleForgetPassword}>forgot password?</p> -->
+                        <!-- <p class="secure">Secure Login with reCAPTCHA subject to Google </p> -->
+                        <!-- <p><a href="/terms" target="_blank">Terms</a> & <a href="/privacy-policy" target="_blank">Privacy</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/index_bundle.js"></script>
+</body>
+</html>
